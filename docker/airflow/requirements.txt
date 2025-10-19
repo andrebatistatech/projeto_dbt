@@ -1,0 +1,9 @@
+# Airflow Providers
+apache-airflow-providers-postgres==5.10.0
+
+# DBT
+dbt-postgres==1.7.4
+
+# Python Utilities
+python-dotenv==1.0.0
+pandas==2.1.4

@@ -1,0 +1,18 @@
+# DBT - Local Development
+dbt-postgres==1.7.4
+
+# Database Drivers (para DBT conectar ao PostgreSQL no Docker)
+psycopg2-binary==2.9.9
+
+# Python Utilities
+python-dotenv==1.0.0
+pandas==2.1.4
+
+# Development Tools
+black==23.12.1
+flake8==7.0.0
+pytest==7.4.3
+pre-commit==3.6.0
+
+# Airflow DAG Development (apenas para syntax highlighting e autocomplete)
+apache-airflow==2.8.1

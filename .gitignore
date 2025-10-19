@@ -1,0 +1,380 @@
+# ============================================
+# PYTHON
+# ============================================
+
+# Virtual Environment
+.venv/
+venv/
+ENV/
+env/
+.virtualenv/
+
+# Python cache
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+
+# Distribution / packaging
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+pip-wheel-metadata/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# PyInstaller
+*.manifest
+*.spec
+
+# Unit test / coverage
+htmlcov/
+.tox/
+.nox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+.hypothesis/
+.pytest_cache/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+*.ipynb
+
+# pyenv
+.python-version
+
+# Environments
+.env
+.env.local
+.env.*.local
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# ============================================
+# DBT
+# ============================================
+
+# DBT artifacts
+dbt_project/target/
+dbt_project/dbt_packages/
+dbt_project/logs/
+dbt_project/dbt_modules/
+
+# DBT profiles (contém credenciais)
+dbt_project/profiles.yml
+.dbt/profiles.yml
+
+# DBT compiled files
+dbt_project/compiled/
+dbt_project/run/
+
+# ============================================
+# AIRFLOW
+# ============================================
+
+# Airflow database
+airflow/airflow.db
+airflow/airflow.db-shm
+airflow/airflow.db-wal
+airflow/unittests.db
+airflow/unittests.cfg
+
+# Airflow logs
+airflow/logs/
+airflow/airflow-webserver.pid
+airflow/standalone_admin_password.txt
+
+# Airflow configuration (pode conter credenciais)
+airflow/airflow.cfg
+airflow/webserver_config.py
+
+# Airflow scheduler
+airflow/scheduler.pid
+
+# ============================================
+# DOCKER
+# ============================================
+
+# Docker volumes (dados persistentes)
+docker/volumes/
+
+# Docker environment variables (credenciais)
+docker/.env
+docker/.env.local
+
+# ============================================
+# POSTGRESQL / DATABASES
+# ============================================
+
+# PostgreSQL data
+postgres-data/
+pgdata/
+*.sql.backup
+*.dump
+
+# Database credentials
+database.ini
+db_config.yml
+
+# ============================================
+# IDEs
+# ============================================
+
+# VS Code
+.vscode/
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+*.code-workspace
+
+# PyCharm
+.idea/
+*.iml
+*.iws
+.idea_modules/
+
+# Sublime Text
+*.sublime-project
+*.sublime-workspace
+
+# Vim
+*.swp
+*.swo
+*~
+.netrwhist
+
+# Emacs
+*~
+\#*\#
+.\#*
+
+# ============================================
+# OPERATING SYSTEM
+# ============================================
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+.Spotlight-V100
+.Trashes
+
+# Windows
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+ehthumbs_vista.db
+*.stackdump
+[Dd]esktop.ini
+$RECYCLE.BIN/
+*.lnk
+
+# Linux
+*~
+.directory
+.Trash-*
+
+# ============================================
+# LOGS
+# ============================================
+
+# General logs
+*.log
+logs/
+*.log.*
+log/
+
+# NPM logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# ============================================
+# TEMPORARY FILES
+# ============================================
+
+# Temporary files
+*.tmp
+*.temp
+*.bak
+*.swp
+*.swo
+*~
+
+# Cache
+.cache/
+*.cache
+
+# ============================================
+# CREDENTIALS & SECRETS
+# ============================================
+
+# Environment variables
+.env
+.env.local
+.env.*.local
+.env.development
+.env.test
+.env.production
+
+# Credentials
+credentials.json
+secrets.yml
+secrets.yaml
+*.pem
+*.key
+*.crt
+*.p12
+*.pfx
+
+# SSH keys
+id_rsa
+id_rsa.pub
+id_ed25519
+id_ed25519.pub
+
+# AWS
+.aws/
+
+# GCP
+gcp-credentials.json
+service-account.json
+
+# ============================================
+# DATA FILES (não versionar dados grandes)
+# ============================================
+
+# CSV files (exceto seeds pequenos)
+*.csv
+!dbt_project/seeds/*.csv
+
+# Excel files
+*.xlsx
+*.xls
+
+# Parquet files
+*.parquet
+
+# JSON data files (exceto configs)
+data/*.json
+
+# Compressed files
+*.zip
+*.tar
+*.tar.gz
+*.rar
+*.7z
+
+# ============================================
+# DOCUMENTATION BUILD
+# ============================================
+
+# Sphinx documentation
+docs/_build/
+docs/.doctrees/
+
+# MkDocs
+site/
+
+# ============================================
+# TESTING
+# ============================================
+
+# Test outputs
+test-results/
+test-output/
+.pytest_cache/
+.tox/
+
+# ============================================
+# MISC
+# ============================================
+
+# Node modules (se usar JS/TS)
+node_modules/
+package-lock.json
+yarn.lock
+
+# Backup files
+*.backup
+*.old
+
+# Archives
+*.zip
+*.tar.gz
+*.rar
+
+# Large files
+*.mp4
+*.mov
+*.avi
+*.mkv
+*.pdf
+
+# ============================================
+# PROJECT SPECIFIC
+# ============================================
+
+# Scripts de desenvolvimento local
+scripts/local_*.sh
+scripts/local_*.ps1
+
+# Dados de teste locais
+test_data/
+sample_data/
+
+# Notebooks de análise exploratória
+notebooks/scratch/
+notebooks/temp/
+
+# Outputs temporários
+output/
+temp/
+tmp/
+
+# ============================================
+# KEEP THESE FILES (force include)
+# ============================================
+
+# Manter estrutura de pastas vazias
+!.gitkeep
+
+# Manter exemplos de configuração
+!.env.example
+!config.example.yml
+
+# Manter seeds pequenos do DBT
+!dbt_project/seeds/*.csv
+
+# Manter DAGs de exemplo
+!airflow/dags/example_*.py
+
+# Manter documentação
+!docs/
+!*.md
+!README.md
